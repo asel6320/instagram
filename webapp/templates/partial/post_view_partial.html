@@ -1,11 +1,20 @@
 <div class="post bg-white border rounded">
     <div class="post-header py-3 px-4 d-flex align-items-center">
-        <img class="post-avatar rounded-circle me-3" src="{{ post.author.avatar.url }}" alt="User Avatar">
-        <span class="post-username font-weight-bold"><a href="{% url 'accounts:profile' post.author.pk %}">
+        {% if post.author.avatar%}
+            <img class="post-avatar rounded-circle me-3" src="{{ post.author.avatar.url }}" alt="User Avatar">
+            <span class="post-username font-weight-bold"><a href="{% url 'accounts:profile' post.author.pk %}">
+                            {{ post.author.username }}</a>
+                        </span>
+            {% if request.user == post.author or perms.webapp.change_post %}
+                <a href="{% url 'webapp:post_update' post.pk %}">Редактировать</a>
+            {% endif %}
+        {% else %}
+            <span class="post-username font-weight-bold"><a href="{% url 'accounts:profile' post.author.pk %}">
                         {{ post.author.username }}</a>
                     </span>
-        {% if request.user == post.author or perms.webapp.change_post %}
-            <a href="{% url 'webapp:post_update' post.pk %}">Редактировать</a>
+            {% if request.user == post.author or perms.webapp.change_post %}
+                <a href="{% url 'webapp:post_update' post.pk %}">Редактировать</a>
+            {% endif %}
         {% endif %}
     </div>
     <img class="post-image img-fluid" src="{{ post.image.url }}" alt="Post Image">

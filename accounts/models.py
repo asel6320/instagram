@@ -14,7 +14,7 @@ class User(AbstractUser):
     followers = models.ManyToManyField('self', related_name='following', symmetrical=False)
 
     def __str__(self):
-        return self.user.username
+        return self.username
 
     class Meta:
         db_table = 'users'
