@@ -1,0 +1,128 @@
+[
+{
+  "model": "accounts.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$hYdB9zMgTEvYogQ0u7fA9h$6dkvDWwlC0Z0a8q+RHuw2LcBXYyMux48vYb7hYAFVdI=",
+    "last_login": "2024-08-28T05:11:26.334Z",
+    "is_superuser": false,
+    "username": "admin",
+    "first_name": "Admin Adminovich",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-08-28T04:52:32.467Z",
+    "avatar": "avatars/EquinoxUpdatedPhoto.jpeg",
+    "description": "Hey, I am new here",
+    "phone": null,
+    "gender": 0,
+    "groups": [],
+    "user_permissions": [],
+    "followers": [
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$WerCFc2bZiE3sW3EfCzzU4$9R3TMQwotH7vGMTBaQPDMMd4+FsSdusArpyT0zco4Y4=",
+    "last_login": "2024-08-28T08:47:22.555Z",
+    "is_superuser": true,
+    "username": "administrator",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-08-28T05:04:36.301Z",
+    "avatar": "avatars/pIMG_7221.jpg",
+    "description": "",
+    "phone": null,
+    "gender": 1,
+    "groups": [],
+    "user_permissions": [],
+    "followers": [
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$VjAEeLjqzhkz3k8hlRsdgc$NoBi6KDCo92jFwm7BugC+KCQZsZI9rqeW/67RHJnOF8=",
+    "last_login": "2024-08-28T09:00:35.415Z",
+    "is_superuser": false,
+    "username": "jack123",
+    "first_name": "Jack",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-08-28T07:55:25.401Z",
+    "avatar": "avatars/3A0EA6A5-5C15-4223-891F-C172AF95780B.JPG",
+    "description": "Hey I am Jack",
+    "phone": null,
+    "gender": 0,
+    "groups": [],
+    "user_permissions": [],
+    "followers": [
+      8
+    ]
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$f6TudsoVf8FrvgNA7P7ma3$3u+MeLx5l9sSjBN+88z+Eqab72MPUUZK1XYDiYVE1z0=",
+    "last_login": "2024-08-28T08:00:34.168Z",
+    "is_superuser": false,
+    "username": "pushka12",
+    "first_name": "Pushka Pushkova",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-08-28T08:00:33.932Z",
+    "avatar": "avatars/E97BEAD5-F2FD-48B7-9F36-8FBFA4EC8D77.JPG",
+    "description": "Hey Pushka",
+    "phone": null,
+    "gender": 1,
+    "groups": [],
+    "user_permissions": [],
+    "followers": [
+      7
+    ]
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$jqUky13738besSBgsmO4kc$xYMLSPRz+DIfq1LtWAe0Ug2TkVQhmLcvD2N7VcrAA/o=",
+    "last_login": "2024-08-28T08:46:05.855Z",
+    "is_superuser": false,
+    "username": "slavache98",
+    "first_name": "",
+    "last_name": "",
+    "email": "ad@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-08-28T08:05:38.891Z",
+    "avatar": "",
+    "description": null,
+    "phone": null,
+    "gender": null,
+    "groups": [],
+    "user_permissions": [],
+    "followers": []
+  }
+}
+]

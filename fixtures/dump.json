@@ -1,0 +1,82 @@
+[
+{
+  "model": "webapp.post",
+  "pk": 1,
+  "fields": {
+    "created_at": "2024-08-28T04:53:05.273Z",
+    "updated_at": "2024-08-28T04:53:05.273Z",
+    "image": "posts/EquinoxUpdatedPhoto.jpeg",
+    "content": "I am new here, hey",
+    "author": 5,
+    "like_users": [
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 2,
+  "fields": {
+    "created_at": "2024-08-28T05:36:43.033Z",
+    "updated_at": "2024-08-28T05:36:43.033Z",
+    "image": "posts/3x4.jpg",
+    "content": "It is my second post",
+    "author": 6,
+    "like_users": [
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-08-28T07:55:50.856Z",
+    "updated_at": "2024-08-28T07:55:50.856Z",
+    "image": "posts/IMG_5710.jpg",
+    "content": "This is my lunch",
+    "author": 7,
+    "like_users": [
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 4,
+  "fields": {
+    "created_at": "2024-08-28T07:57:23.694Z",
+    "updated_at": "2024-08-28T07:57:23.694Z",
+    "image": "posts/IMG_5693.jpg",
+    "content": "This is my BF",
+    "author": 7,
+    "like_users": [
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 5,
+  "fields": {
+    "created_at": "2024-08-28T08:00:53.863Z",
+    "updated_at": "2024-08-28T08:00:53.863Z",
+    "image": "posts/584DA5E4-80F0-4ABE-B784-E98200A680DC.JPG",
+    "content": "This is my first post",
+    "author": 8,
+    "like_users": []
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 6,
+  "fields": {
+    "created_at": "2024-08-28T08:46:37.416Z",
+    "updated_at": "2024-08-28T08:46:37.416Z",
+    "image": "posts/91E75D16-95BB-4B4F-AFEE-C6071989B36A.JPG",
+    "content": "Hey this is my girl",
+    "author": 9,
+    "like_users": []
+  }
+}
+]
