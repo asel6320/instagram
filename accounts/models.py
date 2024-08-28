@@ -10,7 +10,7 @@ class User(AbstractUser):
     avatar = models.ImageField(upload_to="avatars", verbose_name='Аватар')
     description = models.TextField(max_length=2000, verbose_name="Информация", blank=True, null=True)
     phone = models.CharField(max_length=30, verbose_name="Номер телефона", blank=True, null=True)
-    gender = models.IntegerField(choices=GENDER_CHOICES)
+    gender = models.IntegerField(choices=GENDER_CHOICES, null=True, blank=True)
     followers = models.ManyToManyField('self', related_name='following', symmetrical=False)
 
     def __str__(self):
