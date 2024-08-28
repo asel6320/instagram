@@ -40,7 +40,10 @@
 
                 {% if request.user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url "accounts:logout" %}">Выход</a>
+                        <form action="{% url 'accounts:logout' %}?next={{ request.get_full_path }}" method="post">
+                            {% csrf_token %}
+                            <button type="submit" class="nav-link">Выход</button>
+                        </form>
                     </li>
                     <li class="nav-item">
                         <p>Здравствуйте <a
