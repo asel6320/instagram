@@ -1,8 +1,10 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
+from django.utils.decorators import method_decorator
 from django.views import View
+from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from webapp.forms import PostForm
@@ -59,14 +61,14 @@ class PostDetailView(DetailView):
 
 
 class LikePostView(LoginRequiredMixin, View):
-
-    def get(self, request, *args, pk, **kwargs):
+    def post(self, request, *args, pk, **kwargs):
         post = get_object_or_404(Post, pk=pk)
-        if request.user in post.like_users.all():
-            post.like_users.remove(request.user)
-        else:
-            post.like_users.add(request.user)
-        return HttpResponseRedirect(self.request.GET.get("next", reverse("webapp:posts_list")))
+        post.like_users.add(request.user)
+        return JsonResponse({"like_count": post.like_users.count()})
 
+    def delete(self, request, *args, pk, **kwargs):
+        post = get_object_or_404(Post, pk=pk)
+        post.like_users.remove(request.user)
+        return JsonResponse({"like_count": post.like_users.count()})
 
 
