@@ -48,7 +48,7 @@ INSTALLED_APPS = [
 
     'webapp',
     'accounts',
-    'api_v2',
+    'api_v3',
 ]
 
 MIDDLEWARE = [
@@ -110,7 +110,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 5,
+    'PAGE_SIZE': 10,
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),

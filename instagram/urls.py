@@ -21,7 +21,7 @@ from instagram import settings
 from django.contrib.messages import api
 
 api_routers = [
-    path('v2/', include('api_v2.urls')),
+    path('v3/', include('api_v3.urls')),
 ]
 
 urlpatterns = [
