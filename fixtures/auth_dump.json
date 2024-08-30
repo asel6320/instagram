@@ -4,7 +4,7 @@
   "pk": 5,
   "fields": {
     "password": "pbkdf2_sha256$720000$hYdB9zMgTEvYogQ0u7fA9h$6dkvDWwlC0Z0a8q+RHuw2LcBXYyMux48vYb7hYAFVdI=",
-    "last_login": "2024-08-28T05:11:26.334Z",
+    "last_login": "2024-08-29T10:36:25.921Z",
     "is_superuser": false,
     "username": "admin",
     "first_name": "Admin Adminovich",
@@ -22,7 +22,8 @@
     "followers": [
       6,
       7,
-      8
+      8,
+      10
     ]
   }
 },
@@ -31,7 +32,7 @@
   "pk": 6,
   "fields": {
     "password": "pbkdf2_sha256$720000$WerCFc2bZiE3sW3EfCzzU4$9R3TMQwotH7vGMTBaQPDMMd4+FsSdusArpyT0zco4Y4=",
-    "last_login": "2024-08-28T08:47:22.555Z",
+    "last_login": "2024-08-30T04:26:01.889Z",
     "is_superuser": true,
     "username": "administrator",
     "first_name": "",
@@ -48,7 +49,8 @@
     "user_permissions": [],
     "followers": [
       7,
-      8
+      8,
+      10
     ]
   }
 },
@@ -57,7 +59,7 @@
   "pk": 7,
   "fields": {
     "password": "pbkdf2_sha256$720000$VjAEeLjqzhkz3k8hlRsdgc$NoBi6KDCo92jFwm7BugC+KCQZsZI9rqeW/67RHJnOF8=",
-    "last_login": "2024-08-28T09:00:35.415Z",
+    "last_login": "2024-08-29T07:13:58.566Z",
     "is_superuser": false,
     "username": "jack123",
     "first_name": "Jack",
@@ -73,7 +75,9 @@
     "groups": [],
     "user_permissions": [],
     "followers": [
-      8
+      8,
+      5,
+      10
     ]
   }
 },
@@ -98,7 +102,9 @@
     "groups": [],
     "user_permissions": [],
     "followers": [
-      7
+      7,
+      5,
+      10
     ]
   }
 },
@@ -120,6 +126,32 @@
     "description": null,
     "phone": null,
     "gender": null,
+    "groups": [],
+    "user_permissions": [],
+    "followers": [
+      5,
+      10
+    ]
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$xiezA9c5jsNvFAtfxCvjpB$Q0rt8gHx0JHLf8ccBBMTbVbTwc0CR1GjnUK+mxw2XCQ=",
+    "last_login": "2024-08-29T11:22:10.432Z",
+    "is_superuser": false,
+    "username": "asel6320",
+    "first_name": "Asel Aselovna",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-08-29T11:22:09.993Z",
+    "avatar": "avatars/IMG_5561.jpg",
+    "description": "Jack Pot",
+    "phone": null,
+    "gender": 1,
     "groups": [],
     "user_permissions": [],
     "followers": []

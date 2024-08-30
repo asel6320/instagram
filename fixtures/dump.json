@@ -78,5 +78,149 @@
     "author": 9,
     "like_users": []
   }
+},
+{
+  "model": "webapp.post",
+  "pk": 7,
+  "fields": {
+    "created_at": "2024-08-30T05:39:30.645Z",
+    "updated_at": "2024-08-30T05:39:30.645Z",
+    "image": "posts/IMG_5561.jpg",
+    "content": "This is post from api",
+    "author": 5,
+    "like_users": [
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 8,
+  "fields": {
+    "created_at": "2024-08-30T05:39:57.609Z",
+    "updated_at": "2024-08-30T05:39:57.609Z",
+    "image": "posts/IMG_5561_f4cMuvd.jpg",
+    "content": "This is post from api",
+    "author": 5,
+    "like_users": [
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 9,
+  "fields": {
+    "created_at": "2024-08-30T05:41:23.078Z",
+    "updated_at": "2024-08-30T05:41:23.078Z",
+    "image": "posts/584DA5E4-80F0-4ABE-B784-E98200A680DC_zmAuIsW.JPG",
+    "content": "The is 2nd post from api",
+    "author": 5,
+    "like_users": [
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 10,
+  "fields": {
+    "created_at": "2024-08-30T05:43:39.365Z",
+    "updated_at": "2024-08-30T06:29:33.641Z",
+    "image": "posts/IMG_5712_MbMBZA4.PNG",
+    "content": "To check PUT request",
+    "author": 5,
+    "like_users": [
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 11,
+  "fields": {
+    "created_at": "2024-08-30T05:45:53.945Z",
+    "updated_at": "2024-08-30T05:45:53.945Z",
+    "image": "posts/584DA5E4-80F0-4ABE-B784-E98200A680DC_CufHE6g.JPG",
+    "content": "The is 2nd post from api",
+    "author": 5,
+    "like_users": [
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 13,
+  "fields": {
+    "created_at": "2024-08-30T05:59:55.357Z",
+    "updated_at": "2024-08-30T06:30:30.727Z",
+    "image": "posts/IMG_5712_DobiWek.PNG",
+    "content": "To check PUT request",
+    "author": 5,
+    "like_users": []
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 14,
+  "fields": {
+    "created_at": "2024-08-30T06:00:19.242Z",
+    "updated_at": "2024-08-30T06:30:37.962Z",
+    "image": "posts/IMG_5712_C9LzkjE.PNG",
+    "content": "To check PUT request",
+    "author": 5,
+    "like_users": [
+      6
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 15,
+  "fields": {
+    "created_at": "2024-08-30T06:28:33.600Z",
+    "updated_at": "2024-08-30T07:02:37.924Z",
+    "image": "posts/IMG_5712_2zaVgeE.PNG",
+    "content": "To check PUT request",
+    "author": 5,
+    "like_users": []
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 16,
+  "fields": {
+    "created_at": "2024-08-30T06:56:00.430Z",
+    "updated_at": "2024-08-30T07:53:00.808Z",
+    "image": "posts/91E75D16-95BB-4B4F-AFEE-C6071989B36A_jzNenok.JPG",
+    "content": "This is post from Jacks updates",
+    "author": 5,
+    "like_users": []
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 19,
+  "fields": {
+    "created_at": "2024-08-30T07:20:14.231Z",
+    "updated_at": "2024-08-30T08:02:32.236Z",
+    "image": "posts/91E75D16-95BB-4B4F-AFEE-C6071989B36A_TKNGh1r.JPG",
+    "content": "This is post from Jacks updates",
+    "author": 7,
+    "like_users": []
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 22,
+  "fields": {
+    "created_at": "2024-08-30T08:05:16.869Z",
+    "updated_at": "2024-08-30T08:07:13.506Z",
+    "image": "posts/91E75D16-95BB-4B4F-AFEE-C6071989B36A_8G50pmJ.JPG",
+    "content": "This is post from Jacksssssand Admin",
+    "author": 7,
+    "like_users": []
+  }
 }
 ]
