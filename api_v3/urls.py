@@ -1,7 +1,7 @@
 from django.urls import path, include
 from rest_framework.authtoken.views import obtain_auth_token
 
-from api_v3.views import get_csrf_token, PostViewSet
+from api_v3.views import PostViewSet
 from rest_framework import routers
 
 app_name = 'api_v3'

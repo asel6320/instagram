@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.http import HttpResponse, HttpResponseNotAllowed, JsonResponse
 
 from django.views.decorators.csrf import ensure_csrf_cookie
@@ -14,15 +15,7 @@ from api_v3.permissions import IsOwnerOrReadOnly
 from api_v3.serializers import PostSerializer
 from webapp.models import Post
 
-
-# Create your views here.
-@ensure_csrf_cookie
-def get_csrf_token(request):
-    if request.method == 'GET':
-        return HttpResponse()
-    else:
-        return HttpResponseNotAllowed(permitted_methods=["GET"])
-
+User = get_user_model()
 class PostViewSet(ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
@@ -35,11 +28,25 @@ class PostViewSet(ModelViewSet):
     @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated])
     def like(self, request, pk=None):
         post = self.get_object()
-        post.like_users.add(request.user)
-        return Response({'status': 'liked'}, status=status.HTTP_200_OK)
+        user = request.user
+
+        if user not in post.like_users.all():
+            post.like_users.add(user)
+            post.save()
+            return Response({'status': 'liked', 'like_users': post.like_users.values_list('id', flat=True)},
+                            status=status.HTTP_200_OK)
+        else:
+            return Response({'status': 'already liked'}, status=status.HTTP_400_BAD_REQUEST)
 
     @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated])
     def unlike(self, request, pk=None):
         post = self.get_object()
-        post.like_users.remove(request.user)
-        return Response({'status': 'unliked'}, status=status.HTTP_200_OK)
+        user = request.user
+
+        if user in post.like_users.all():
+            post.like_users.remove(user)
+            post.save()
+            return Response({'status': 'unliked', 'like_users': post.like_users.values_list('id', flat=True)},
+                            status=status.HTTP_200_OK)
+        else:
+            return Response({'status': 'not liked'}, status=status.HTTP_400_BAD_REQUEST)
